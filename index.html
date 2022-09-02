@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cafe To Do</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/0acf50dcb0.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- 로그인창 -->
+    <div id="splash-container">
+      <div id="splash">
+        <div id="splash_logo">
+          <img src="img/coffee (1).png" />
+          <span>Cafe To Do</span>
+        </div>
+        <div id="splash_question">
+          <form id="splash_question_form">
+            <input
+              type="text"
+              placeholder="당신의 이름을 입력해주세요"
+              required
+            />
+            <button><i class="fa-solid fa-pencil"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- 리스트 창 -->
+    <div id="background"></div>
+    <main>
+      <div id="background-contents">
+        <div id="name-container">
+          <span id="greeting-span"></span>
+        </div>
+        <section id="main-contents_section">
+          <div id="out-todobox">
+            <div id="clock-container">
+              <span id="date"></span>
+              <span id="clock"></span>
+            </div>
+            <div id="todobox_container">
+              <div id="todobox">
+                <ul id="list-zone"></ul>
+                <form id="todo-form">
+                  <input
+                    type="text"
+                    placeholder="할 일을 입력해주세요"
+                    required
+                  />
+                  <button>
+                    <i class="fa-solid fa-check fa-lg"></i>
+                  </button>
+                </form>
+              </div>
+            </div>
+            <div id="weather-container">
+              <span class="region-weather_class" id="region"
+                >위치: Loading...</span
+              >
+              <span class="region-weather_class" id="weather"
+                >현재날씨: Loading...</span
+              >
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script src="js/login-splash.js"></script>
+    <script src="js/backround.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/todolist.js"></script>
+    <script src="js/weather.js"></script>
+  </body>
+</html>
