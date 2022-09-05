@@ -27,10 +27,18 @@ function inputName(event) {
   saveInput(name);
   loginInput.value = "";
   let getName = localStorage.getItem("username");
-  greeting.innerText = `Hello, ${getName}`;
+  greeting.innerText = getName;
   splashNone();
 }
 
 loginForm.addEventListener("submit", inputName);
 splashNone(localStorage.getItem("username"));
-greeting.innerText = `Hello, ${getName}`;
+greeting.innerText = getName;
+
+const nameSpan = document.querySelector("#greeting-span");
+function deleteName() {
+  localStorage.clear();
+  window.location.reload();
+}
+
+nameSpan.addEventListener("click", deleteName);

@@ -37,9 +37,10 @@
     <main>
       <div id="background-contents">
         <div id="name-container">
+          <span id="greeting-hello">Hello, </span>
           <span id="greeting-span"></span>
         </div>
-        <section id="main-contents_section">
+        <div id="main-contents_section">
           <div id="out-todobox">
             <div id="clock-container">
               <span id="date"></span>
@@ -69,14 +70,30 @@
               >
             </div>
           </div>
-        </section>
+        </div>
       </div>
     </main>
-
+    <nav>
+      <div id="quotes-container">
+        <span id="quotes_icon">
+          <i class="fa-solid fa-quote-right fa-2x"></i>
+          <span>QUOTES</span>
+        </span>
+        <span id="quotes" class="quotes_content"
+          >자신의 벗을 최선의 적으로 삼아야 한다. 그대의 벗과 적대할 때 그대의
+          마음은 벗을 더없이 가깝게 여겨야 한다.</span
+        >
+        <span id="author" class="quotes_content">토마스 풀러 </span>
+        <span id="return_icon" class="quotes_content"
+          ><i class="fa-solid fa-rotate-left"></i
+        ></span>
+      </div>
+    </nav>
     <script src="js/login-splash.js"></script>
     <script src="js/backround.js"></script>
     <script src="js/clock.js"></script>
     <script src="js/todolist.js"></script>
     <script src="js/weather.js"></script>
+    <script src="js/quotes.js"></script>
   </body>
 </html>
