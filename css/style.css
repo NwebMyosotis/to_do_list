@@ -185,8 +185,8 @@ main {
 
 /* sidebar */
 
-nav {
-  z-index: 2;
+aside {
+  z-index: 11;
   position: fixed;
   right: 5px;
   top: 5px;
@@ -432,8 +432,8 @@ nav {
     width: 85vw;
   }
 
-  #out-todobox {
-    width: 85vw;
+  #todo-form input {
+    width: 70vw;
   }
 
   #clock-container {
@@ -441,14 +441,55 @@ nav {
   }
 
   #quotes_icon {
-    font-size: 15px;
+    font-size: 2vw;
   }
 
   #splash_question_form input {
-    width: 70vw;
+    max-width: 70vw;
+    min-width: none;
+    text-indent: 10px;
   }
 
   #greeting-hello {
     display: none;
+  }
+
+  #quotes_icon {
+    flex-direction: row;
+  }
+
+  #quotes_icon i {
+    padding-right: 3px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  #todo-form input {
+    height: 40px;
+    width: 80%;
+  }
+
+  #todo-form button {
+    margin-left: 5vw;
+  }
+
+  #splash_logo img {
+    width: 150px;
+    height: 150px;
+  }
+
+  #splash_logo span {
+    font-size: 35px;
+  }
+
+  #splash_question_form input {
+    height: 35px;
+    font-size: 2.8vw;
+  }
+
+  #splash_question_form button {
+    right: -7px;
+    bottom: -7px;
+    font-size: 15px;
   }
 }
