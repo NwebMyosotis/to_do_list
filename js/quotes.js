@@ -60,7 +60,7 @@ function getQuote() {
   let quote = quotes[quotesNum].quote;
   let author = quotes[quotesNum].author;
   quoteSpan.innerText = quote;
-  authorSpan.innerText = author;
+  authorSpan.innerText = `-${author}-`;
 }
 
 getQuote();
